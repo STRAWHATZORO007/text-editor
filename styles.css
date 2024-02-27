@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.editor {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center; /* Center align the buttons */
+    margin-bottom: 10px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button.active {
+    background-color: #007BFF;
+    color: white;
+}
+
+.spacer {
+    flex-grow: 1; /* Create a space to separate buttons */
+}
+
+#textEditor {
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    resize: both;
+    overflow: auto;
+}
+
+#textEditor:focus {
+    border: 2px solid #007BFF;
+}
